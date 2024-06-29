@@ -1,0 +1,31 @@
+MainWidget:
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint_y: None
+            height: root.height//30
+        Image:
+            source: "logo.png"
+            allow_stretch: False
+            fit_mode: "scale-down"
+            size_hint_y: None
+            height: root.height//8
+        Label:
+            size_hint_y: None
+            height: root.height//6
+
+        Button:
+            id: b1
+            size_hint_x: 0.8
+            size_hint_y: None
+            height: int(root.height*0.4)
+            pos_hint: {'center_x':0.5}
+            text: "CONVERT IMAGE TO ASCII"
+            font_name: "digital_display.ttf"
+            front_size: "50sp"
+            background_normal: ''
+            background_color: 1,0.42,0.0078,1
+            on_release: root.b1_on_click(self)
+        Label:
+            text: ""
+
